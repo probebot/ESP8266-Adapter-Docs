@@ -119,7 +119,7 @@ void loop() {
           // unknown command
           parser.print(F("{}")); // always send back a pfod msg otherwise pfodApp will disconnect.                  
         }
-        //cmd = 0; // have processed this cmd now  
+        yield() //cmd = 0; // have processed this cmd now  
       }
     }
     controlRelay();
